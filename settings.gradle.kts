@@ -1,0 +1,1 @@
+rootProject.name = "learn-jetbrains-plugin-101"
