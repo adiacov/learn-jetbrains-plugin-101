@@ -13,6 +13,9 @@
     elementTypeHolderClass="com.github.adiacov.language.psi.SimpleTypes"
     elementTypeClass="com.github.adiacov.language.psi.SimpleElementType"
     tokenTypeClass="com.github.adiacov.language.psi.SimpleTokenType"
+
+    // Add custom utility class
+    psiImplUtilClass="com.github.adiacov.language.psi.impl.SimplePsiImplUtil"
 }
 
 simpleFile ::= item_*
@@ -20,3 +23,6 @@ simpleFile ::= item_*
 private item_ ::= (property|COMMENT|CRLF)
 
 property ::= (KEY? SEPARATOR VALUE?) | KEY
+{
+    methods=[getKey getValue]
+}
