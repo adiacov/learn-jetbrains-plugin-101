@@ -38,5 +38,12 @@
             implementationClass="com.github.adiacov.language.SimpleParserDefinition"
         />
 
+        <lang.syntaxHighlighterFactory
+            language="Simple"
+            implementationClass="com.github.adiacov.language.SimpleSyntaxHighlighterFactory"
+        />
+
+        <colorSettingsPage implementation="com.github.adiacov.language.SimpleColorSettingsPage" />
+
     </extensions>
 </idea-plugin>
