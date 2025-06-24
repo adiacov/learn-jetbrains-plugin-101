@@ -1,0 +1,22 @@
+{
+    generate=[java="8" names="long" visitor-value="R"]
+
+    parserClass="com.github.adiacov.language.parser.SimpleParser"
+
+    extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+    psiClassPrefix="Simple"
+    psiImplClassSuffix="Impl"
+    psiPackage="com.github.adiacov.language.psi"
+    psiImplPackage="com.github.adiacov.language.psi.impl"
+
+    elementTypeHolderClass="com.github.adiacov.language.psi.SimpleTypes"
+    elementTypeClass="com.github.adiacov.language.psi.SimpleElementType"
+    tokenTypeClass="com.github.adiacov.language.psi.SimpleTokenType"
+}
+
+simpleFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY

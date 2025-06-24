@@ -50,3 +50,11 @@ tasks {
         compilerOptions.jvmTarget.set(JvmTarget.JVM_17)
     }
 }
+
+sourceSets {
+    main {
+        java {
+            srcDirs("src/main/gen")
+        }
+    }
+}
