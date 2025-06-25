@@ -47,5 +47,10 @@
         <colorSettingsPage implementation="com.github.adiacov.language.SimpleColorSettingsPage" />
 
         <annotator language="JAVA" implementationClass="com.github.adiacov.language.SimpleAnnotator"/>
+
+        <codeInsight.lineMarkerProvider
+                language="JAVA"
+                implementationClass="com.github.adiacov.language.SimpleLineMarkerProvider"
+        />
     </extensions>
 </idea-plugin>
