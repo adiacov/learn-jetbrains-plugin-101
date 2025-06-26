@@ -66,5 +66,10 @@
                 language="Simple"
                 implementationClass="com.github.adiacov.language.SimpleRefactoringSupportProvider"
         />
+
+        <lang.findUsagesProvider
+                language="Simple"
+                implementationClass="com.github.adiacov.language.SimpleFindUsagesProvider"
+        />
     </extensions>
 </idea-plugin>
