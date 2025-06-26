@@ -71,5 +71,10 @@
                 language="Simple"
                 implementationClass="com.github.adiacov.language.SimpleFindUsagesProvider"
         />
+
+        <lang.foldingBuilder
+                language="JAVA"
+                implementationClass="com.github.adiacov.language.SimpleFoldingBuilder"
+        />
     </extensions>
 </idea-plugin>
