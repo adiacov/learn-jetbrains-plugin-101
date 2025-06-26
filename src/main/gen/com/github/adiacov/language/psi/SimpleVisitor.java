@@ -8,6 +8,10 @@ import com.intellij.psi.PsiElement;
 public class SimpleVisitor<R> extends PsiElementVisitor {
 
   public R visitProperty(@NotNull SimpleProperty o) {
+    return visitNamedElement(o);
+  }
+
+  public R visitNamedElement(@NotNull SimpleNamedElement o) {
     return visitPsiElement(o);
   }
 

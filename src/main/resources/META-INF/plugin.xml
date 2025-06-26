@@ -57,5 +57,14 @@
                 language="Simple"
                 implementationClass="com.github.adiacov.language.SimpleCompletionContributor"
         />
+
+        <psi.referenceContributor
+                language="JAVA"
+                implementation="com.github.adiacov.language.SimpleReferenceContributor"
+        />
+        <lang.refactoringSupport
+                language="Simple"
+                implementationClass="com.github.adiacov.language.SimpleRefactoringSupportProvider"
+        />
     </extensions>
 </idea-plugin>
