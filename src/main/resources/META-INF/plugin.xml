@@ -80,5 +80,10 @@
 
         <gotoSymbolContributor implementation="com.github.adiacov.language.SimpleChooseByNameContributor" />
 
+        <lang.psiStructureViewFactory
+                language="Simple"
+                implementationClass="com.github.adiacov.language.SimpleStructureViewFactory"
+        />
+
     </extensions>
 </idea-plugin>
