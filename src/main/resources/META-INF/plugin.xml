@@ -85,5 +85,6 @@
                 implementationClass="com.github.adiacov.language.SimpleStructureViewFactory"
         />
 
+        <navbar implementation="com.github.adiacov.language.SimpleStructureAwareNavbar"/>
     </extensions>
 </idea-plugin>
