@@ -86,5 +86,10 @@
         />
 
         <navbar implementation="com.github.adiacov.language.SimpleStructureAwareNavbar"/>
+
+        <lang.formatter
+                language="Simple"
+                implementationClass="com.github.adiacov.language.SimpleFormattingModelBuilder"
+        />
     </extensions>
 </idea-plugin>
