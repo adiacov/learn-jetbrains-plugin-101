@@ -62,6 +62,7 @@
                 language="JAVA"
                 implementation="com.github.adiacov.language.SimpleReferenceContributor"
         />
+
         <lang.refactoringSupport
                 language="Simple"
                 implementationClass="com.github.adiacov.language.SimpleRefactoringSupportProvider"
@@ -76,5 +77,8 @@
                 language="JAVA"
                 implementationClass="com.github.adiacov.language.SimpleFoldingBuilder"
         />
+
+        <gotoSymbolContributor implementation="com.github.adiacov.language.SimpleChooseByNameContributor" />
+
     </extensions>
 </idea-plugin>

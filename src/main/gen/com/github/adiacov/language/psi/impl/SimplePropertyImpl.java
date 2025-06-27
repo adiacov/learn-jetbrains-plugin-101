@@ -9,6 +9,7 @@ import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static com.github.adiacov.language.psi.SimpleTypes.*;
 import com.github.adiacov.language.psi.*;
+import com.intellij.navigation.ItemPresentation;
 
 public class SimplePropertyImpl extends SimpleNamedElementImpl implements SimpleProperty {
 
@@ -49,6 +50,11 @@ public class SimplePropertyImpl extends SimpleNamedElementImpl implements Simple
   @Override
   public PsiElement setName(String newName) {
     return SimplePsiImplUtil.setName(this, newName);
+  }
+
+  @Override
+  public ItemPresentation getPresentation() {
+    return SimplePsiImplUtil.getPresentation(this);
   }
 
 }

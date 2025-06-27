@@ -25,5 +25,5 @@ private item_ ::= (property|COMMENT|CRLF)
 property ::= (KEY? SEPARATOR VALUE?) | KEY {
     mixin="com.github.adiacov.language.psi.impl.SimpleNamedElementImpl"
     implements="com.github.adiacov.language.psi.SimpleNamedElement"
-    methods=[getKey getValue getName getNameIdentifier setName]
+    methods=[getKey getValue getName getNameIdentifier setName getPresentation]
 }
