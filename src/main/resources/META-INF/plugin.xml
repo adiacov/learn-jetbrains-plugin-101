@@ -91,5 +91,10 @@
                 language="Simple"
                 implementationClass="com.github.adiacov.language.SimpleFormattingModelBuilder"
         />
+
+        <codeStyleSettingsProvider implementation="com.github.adiacov.language.SimpleCodeStyleSettingsProvider"/>
+
+        <langCodeStyleSettingsProvider
+                implementation="com.github.adiacov.language.SimpleLanguageCodeStyleSettingsProvider"/>
     </extensions>
 </idea-plugin>
