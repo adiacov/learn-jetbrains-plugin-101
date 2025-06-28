@@ -106,5 +106,10 @@
                 language="Simple"
                 implementationClass="com.github.adiacov.language.SimpleDocumentationProvider"
         />
+
+        <spellchecker.support
+                language="Simple"
+                implementationClass="com.github.adiacov.language.SimpleSpellcheckingStrategy"
+        />
     </extensions>
 </idea-plugin>
