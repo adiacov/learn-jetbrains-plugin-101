@@ -53,7 +53,7 @@ public final class SimpleAnnotator implements Annotator {
                     .range(keyRange)
                     .highlightType(ProblemHighlightType.LIKE_UNKNOWN_SYMBOL)
                     // ** Tutorial step 19. - Add a quick fix for the string containing possible properties
-//                    .withFix(new SimpleCreatePropertyQuickFix(key))
+                    .withFix(new SimpleCreatePropertyQuickFix(key))
                     .create();
         } else {
             // Found at least one property, force the text attributes to Simple syntax value character
