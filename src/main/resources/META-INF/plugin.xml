@@ -96,5 +96,10 @@
 
         <langCodeStyleSettingsProvider
                 implementation="com.github.adiacov.language.SimpleLanguageCodeStyleSettingsProvider"/>
+
+        <lang.commenter
+                language="Simple"
+                implementationClass="com.github.adiacov.language.SimpleCommenter"
+        />
     </extensions>
 </idea-plugin>
