@@ -101,5 +101,10 @@
                 language="Simple"
                 implementationClass="com.github.adiacov.language.SimpleCommenter"
         />
+
+        <lang.documentationProvider
+                language="Simple"
+                implementationClass="com.github.adiacov.language.SimpleDocumentationProvider"
+        />
     </extensions>
 </idea-plugin>
